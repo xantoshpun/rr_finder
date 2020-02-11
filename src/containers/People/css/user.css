@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+
+.user{
+    background-color: hsl(212, 83%, 76%);
+    color: #05386b;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+}
+.list
+{
+    margin-top: 30px;
+    height: 100%;
+}
+
+
