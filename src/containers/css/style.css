@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://kit.fontawesome.com/a81368914c.js");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	overflow: hidden;
+}
+
+.home_container .login {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	color: white;
+	display: block;
+	border-radius: 25px;
+	font-size: 16px;
+	font-family: "Poiret One";
+	font-weight: bolder;
+	letter-spacing: 0.1em;
+	padding: 12px 24px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+}
+.home_container {
+	width: 100%;
+}
+.home_container .sign_up {
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	color: white;
+	font-size: 16px;
+	padding: 12px 24px;
+	font-family: "Poiret One";
+	font-weight: bolder;
+	letter-spacing: 0.1em;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.wave {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}
+
+.img {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.login-content {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	margin-top: 15%;
+	justify-content: center;
+}
+
+.signup-content {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	margin-top: 5%;
+	justify-content: center;
+}
+
+.img img {
+	width: 500px;
+}
+
+.loginForm {
+	width: 360px;
+}
+
+.login-content img {
+	height: 100px;
+}
+
+.signup-content img {
+	height: 100px;
+}
+
+.login-content h2 {
+	margin: 2px 0;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 2.9rem;
+}
+
+.login-content .input-div {
+	position: relative;
+	display: grid;
+	grid-template-columns: 7% 93%;
+	margin: 25px 0;
+	padding: 5px 0;
+	border-bottom: 2px solid #d9d9d9;
+}
+
+.login-content .input-div.one {
+	margin-top: 0;
+}
+
+.signup-content h2 {
+	margin: 2px 0;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 2.9rem;
+}
+
+.signup-content .input-div {
+	position: relative;
+	display: grid;
+	grid-template-columns: 7% 93%;
+	margin: 25px 0;
+	padding: 5px 0;
+	border-bottom: 2px solid #d9d9d9;
+}
+
+.signup-content .input-div.one {
+	margin-top: 0;
+}
+
+.i {
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i i {
+	transition: 0.3s;
+}
+
+.input-div > div {
+	position: relative;
+	height: 45px;
+}
+
+.input-div > div > h5 {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: 0.3s;
+}
+
+.input-div:before,
+.input-div:after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #38d39f;
+	transition: 0.4s;
+}
+
+.input-div:before {
+	right: 50%;
+}
+
+.input-div:after {
+	left: 50%;
+}
+
+.input-div.focus:before,
+.input-div.focus:after {
+	width: 50%;
+}
+
+.input-div.focus > div > h5 {
+	top: -5px;
+	font-size: 15px;
+}
+
+.input-div.focus > .i > i {
+	color: #38d39f;
+}
+
+.input-div > div > input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: "poppins", sans-serif;
+}
+
+.input-div.pass {
+	margin-bottom: 4px;
+}
+
+a {
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	transition: 0.3s;
+}
+
+a:hover {
+	color: #38d39f;
+}
+
+.btn:hover {
+	background-position: right;
+}
+
+@media screen and (max-width: 1050px) {
+	.container {
+		grid-gap: 5rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	form {
+		width: 290px;
+	}
+
+	.login-content h2 {
+		font-size: 2.4rem;
+		margin: 2px 0;
+	}
+
+	.img img {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+
+	.img {
+		display: none;
+	}
+
+	.wave {
+		display: none;
+	}
+
+	.login-content {
+		margin-top: 10%;
+		justify-content: center;
+	}
+}
+
+#regForm {
+	background-color: #ffffff;
+	margin: 100px auto;
+
+	padding: 40px;
+	width: 70%;
+	min-width: 300px;
+}
+
+h1 {
+	text-align: center;
+}
+
+input {
+	padding: 10px;
+	width: 100%;
+	font-size: 17px;
+
+	border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+	background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+	display: none;
+}
+
+button {
+	background-color: #4caf50;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 17px;
+
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.7;
+}
+
+#prevBtn {
+	background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbbbbb;
+	border: none;
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 0.5;
+}
+
+.step.active {
+	opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+	background-color: #4caf50;
+}
+
+.fa {
+	color: white;
+	font-size: 27px;
+	margin-left: 8px;
+}
+#validation-txt {
+	color: red;
+	font-size: 18px;
+	width: 300px;
+}
+#password-3 {
+	-webkit-text-security: disc;
+	-moz-text-security: circle;
+	text-rendering: circle;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.eye {
+	float: right;
+	background-color: aqua;
+	margin-left: 340px;
+}

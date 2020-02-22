@@ -5,7 +5,7 @@ import { Route, Link, Switch } from "react-router-dom"
 
 import "../user.css"
 
-class Alluser extends React.Component {
+class Room extends React.Component {
 	deleteUser = () => {
 		axios.delete("http://localhost:8888/delete/" + this.props.id)
 		window.location.reload(false)
@@ -43,4 +43,4 @@ class Alluser extends React.Component {
 	}
 }
 
-export default Alluser
+export default Room
